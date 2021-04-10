@@ -38,7 +38,7 @@ public class Canvas extends JPanel implements Runnable{
 		this.alg = alg;
 		this.alg.setCanvas(this);
 		this.mouse = mouse;
-
+		System.out.println("TESTE");
 		for (Form f : formList){
 			for (int i = 0; i < f.getVector3D().size(); i++){
 				f.getVector3D().set(i, alg.setScale(8,8,8).multiplyVector3D(f.getVector3D().get(i)));
